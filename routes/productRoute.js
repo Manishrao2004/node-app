@@ -1,3 +1,7 @@
 import express from "express"
-const Router= express.Router()
+import { showProducts } from "../controllers/productController"
+const ProductRouter= express.Router()
+
 productRouter.get("/", showProducts)
+
+export default productRouter
