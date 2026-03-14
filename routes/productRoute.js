@@ -1,6 +1,6 @@
 import express from "express"
-import { showProducts } from "../controllers/productController"
-const ProductRouter= express.Router()
+import { showProducts } from "../controllers/productController.js"
+const productRouter= express.Router()
 
 productRouter.get("/", showProducts)
 
